@@ -13,7 +13,22 @@ class Address
 		int zip;
 	
 	public:
-	
+		
+		//getters
+		
+		string getLine1();
+		string getLine2();
+		string getCity();
+		string getState();
+		int getZip();
+		
+		//setters
+		
+		void setLine1(string line1);
+		void setLine2(string line2);
+		void setCity(string city);
+		void setState(string state);
+		void setZip(int zip);
 	
 };
 

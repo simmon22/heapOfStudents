@@ -11,7 +11,18 @@ class Date
 		int year;
 	
 	public:
-	
+		
+		//getters
+		
+		int getMonth();
+		int getDay();
+		int getYear();
+		
+		//setters
+		
+		void setMonth(int month);
+		void setDay(int day);
+		void setYear(int year);
 	
 };
 
