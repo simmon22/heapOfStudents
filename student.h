@@ -18,23 +18,23 @@ class Student
 		int credits;
 	
 	public:
-	Student();
+		Student();
+    		
+    		void getLast();
+        	void getFirst();
+        	void getAddress()
+        	void getDob();
+        	void getGrad();
+        	void getGpa();
+        	void getCredits();
     
-        void getLast();
-        void getFirst();
-        void getAddress()
-        void getDob();
-        void getGrad();
-        void getGpa();
-        void getCredits();
-    
-        void setLast();
-        void setFirst();
-        void setAddress()
-        void setDob();
-        void setGrad();
-        void setGpa();
-        void setCredits();
+        	void setLast();
+        	void setFirst();
+        	void setAddress()
+        	void setDob();
+        	void setGrad();
+        	void setGpa();
+        	void setCredits();
 	
 	
 };
