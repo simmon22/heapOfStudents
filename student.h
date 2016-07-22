@@ -3,8 +3,14 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 
+#include <string>
+
+/*
 #include "date.h"
 #include "address.h"
+*/
+
+using namespace std;
 
 class Student
 {
@@ -18,24 +24,28 @@ class Student
 		int credits;
 	
 	public:
-	Student();
     
-        void getLast();
-        void getFirst();
-        void getAddress()
-        void getDob();
-        void getGrad();
-        void getGpa();
-        void getCredits();
-    
-        void setLast();
-        void setFirst();
-        void setAddress()
-        void setDob();
-        void setGrad();
-        void setGpa();
-        void setCredits();
+        Student();
+        Student(string first, string last, Address address, Date dob, Date grad, string gpa, string credits);
 	
+		//getters
+		string getFirst();
+		string getLast();
+		Address getAddress();
+		Date getDOB();
+		Date getGraduation();
+		float getGPA();
+		int getCredits();
+		
+		//setters
+		void setFirst(string firstname);
+		void setLast(string lastname);
+		void setAddress(Address address);
+		void setDOB(Date dob);
+		void setGraduation(Date graduation);
+		void setGPA(float gpa);
+		void setCredits(int credits);
+		
 	
 };
 

@@ -17,7 +17,7 @@ address.o: address.cpp address.h
 	
 clean:
 	rm *.o 
-	rm main
+	rm output
 
 run: output
 	./output
