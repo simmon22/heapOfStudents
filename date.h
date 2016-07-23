@@ -12,6 +12,11 @@ class Date
 	
 	public:
 		
+		//constructors
+		
+		Date();
+        Date(int month, int day, int year);
+		
 		//getters
 		
 		int getMonth();

@@ -3,31 +3,38 @@
 #ifndef ADDRESS_H
 #define ADDRESS_H
 
+#include <string>
+
 class Address
 {
 	private:
-		string line1;
-		string line2;
-		string city;
-		string state;
+		std::string line1;
+		std::string line2;
+		std::string city;
+		std::string state;
 		int zip;
 	
 	public:
 		
+		//constructors
+		
+		Address();
+        Address(std::string line1, std::string line2, std::string city, std::string state, int zip);
+		
 		//getters
 		
-		string getLine1();
-		string getLine2();
-		string getCity();
-		string getState();
+		std::string getLine1();
+		std::string getLine2();
+		std::string getCity();
+		std::string getState();
 		int getZip();
 		
 		//setters
 		
-		void setLine1(string line1);
-		void setLine2(string line2);
-		void setCity(string city);
-		void setState(string state);
+		void setLine1(std::string line1);
+		void setLine2(std::string line2);
+		void setCity(std::string city);
+		void setState(std::string state);
 		void setZip(int zip);
 	
 };

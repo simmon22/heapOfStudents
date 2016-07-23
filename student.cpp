@@ -1,6 +1,10 @@
 //student.cpp
 
-#include <iostream>
+#include <string>
+
+#include "student.h"
+#include "date.h"
+#include "address.h"
 
 using namespace std;
 
@@ -76,4 +80,15 @@ void Student::setGPA(float gpa)
 void Student::setCredits(int credits)
 {
 	Student::credits = credits;
+}
+
+Student::Student(string first, string last, Address address, Date dob, Date grad, float gpa, int credits)
+{
+    setFirst(firstname);
+    setLast(lastname);
+    setAddress(address);
+    setDOB(dob);
+    setGraduation(graduation);
+    setGPA(gpa);
+    setCredits(credits);
 }

@@ -1,6 +1,6 @@
 //date.cpp
 
-#include <iostream>
+#include "date.h"
 
 using namespace std;
 
@@ -37,4 +37,11 @@ void Date::setDay(int day)
 void Date::setYear(int year)
 {
 	Date::year = year;
+}
+
+Date::Date(int month, int day, int year)
+{
+    setMonth(month);
+    setDay(day);
+    setYear(year);
 }

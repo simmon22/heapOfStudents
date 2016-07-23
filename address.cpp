@@ -1,6 +1,8 @@
 //address.cpp
 
-#include <iostream>
+#include <string>
+
+#include "address.h"
 
 using namespace std;
 
@@ -56,4 +58,15 @@ void Address::setState(string state)
 void Address::setZip(int zip)
 {
 	Address::zip = zip;
+}
+
+//overloaded constructor
+
+Address::Address(string line1, string line2, string city, string state, int zip)
+{
+    setLine1(line1);
+    setLine2(line2);
+    setCity(city);
+    setState(state);
+    setZip(zip);
 }

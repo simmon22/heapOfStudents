@@ -3,14 +3,16 @@
 #ifndef STUDENT_H
 #define STUDENT_H
 
+#include <string>
+
 #include "date.h"
 #include "address.h"
 
 class Student
 {
 	private:
-		string firstname;
-		string lastname;
+		std::string firstname;
+		std::string lastname;
 		Address address;
 		Date dob;
 		Date graduation;
@@ -19,9 +21,14 @@ class Student
 	
 	public:
 	
+		//constructors
+	
+		Student();
+        Student(std::string firstname, std::string lastname, Address address, Date dob, Date graduation, float gpa, int credits);
+	
 		//getters
-		string getFirst();
-		string getLast();
+		std::string getFirst();
+		std::string getLast();
 		Address getAddress();
 		Date getDOB();
 		Date getGraduation();
@@ -29,8 +36,8 @@ class Student
 		int getCredits();
 		
 		//setters
-		void setFirst(string firstname);
-		void setLast(string lastname);
+		void setFirst(std::string firstname);
+		void setLast(std::string lastname);
 		void setAddress(Address address);
 		void setDOB(Date dob);
 		void setGraduation(Date graduation);
